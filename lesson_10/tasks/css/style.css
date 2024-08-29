@@ -1,0 +1,77 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+[class*=__container] {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 0.9375rem;
+}
+table {
+	max-width: 1600px;
+}
+.block1 {
+	padding-top: 15px;
+	width: 50rem;
+	height: 31.25rem;
+	border: 3px solid green;
+}
+.block1__item {
+	text-align: center;
+	height: 1.25rem;
+	background-color: blue;
+	color: #fff;
+	margin-bottom: 15px;
+	font-size: 16px;
+	padding: 2px 0;
+}
+.block2 {
+	padding-top: 15px;
+	width: 50rem;
+	height: 31.25rem;
+	border: 3px solid blue;
+}
+.block2__item {
+	text-align: center;
+	background-color: green;
+	color: #fff;
+	font-size: 16px;
+	padding: 5px;
+}
+.work {
+	padding-top: 1.875rem;
+	padding-bottom: 1.875rem;
+}
+.work__title {	
+	font-size: 1.25rem;
+}
+.work__title:not(:last-child) {
+	margin-bottom: 1.875rem;	
+}
+.work__text {
+	font-size: 1rem;
+	line-height: 130%;
+	color: #111;
+}
+.work__image:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.work__text:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.work__actions {
+}
+.work__actions:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.actions-work {
+}
+.actions-work__link {
+	display: flex;
+	font-size: 1rem;
+	line-height: 130%;
+	color: blue;
+	transition: color 0.3s;
+}
+.actions-work__link:hover {
+	color: green;
+}
