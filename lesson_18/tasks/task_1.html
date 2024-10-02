@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Задача 1</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 1</h1>
+					<div class="work__text">Умова. Розробити калькулятор</div>
+					<div class="work__image">
+						<img src="img/01.jpg" alt="Image">
+					</div>
+					<form action="#" class="work__calc calc">
+						<div class="calc__body">
+							<div class="calc__item">
+								<label class="calc__label" for="num1">First number</label>
+								<input class="calc__input" type="number" id="num1" value="0">
+							</div>
+							<div class="calc__item">
+								<label class="calc__label" for="num2">Second number</label>
+								<input class="calc__input" type="number" id="num2" value="0">
+							</div>
+						</div>
+						<div class="calc__actions">
+							<button class="calc__button plus">Додати</button>
+							<button class="calc__button minus">Відняти</button>
+							<button class="calc__button product">Помножити</button>
+							<button class="calc__button division">Поділити</button>
+						</div>
+						<div class="calc__footer">
+							<label for="result" class="calc__label">Результат</label>
+							<input class="calc__input" type="number" id="result" value="0" readonly>
+						</div>
+					</form>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_1.js"></script>
+</body>
+</html>

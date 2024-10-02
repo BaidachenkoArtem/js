@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Задача 7</title>
+	<script src="js/task_7.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 7</h1>
+					<div class="work__text">Умова. Подорож складається з 3 етапів. На кожному етапі користувач може вибрати один з видів транспорту (авто, автобус, літак - випадаючий список), харчування (сніданок, обід, вечеря – checkbоx) та одного з 3-х гідів(використати  - radio buttons). Ціни визначте самі. Підрахувати загальну вартість.</div>
+					<div class="work__stage stage">
+						<div class="stage__body">
+							<h2 class="stage__title">Етап 1</h2>
+							<div class="stage__content">
+								<div class="stage__item">
+									<label for="transport1">Транспорт:</label>
+									<select id="transport1">
+										<option value="auto" selected>Авто (500 грн)</option>
+										<option value="bus">Автобус (300 грн)</option>
+										<option value="plane">Літак (1000 грн)</option>
+									</select>
+								</div>
+							</div>
+							<div class="stage__content">
+								<h3 class="stage__title">Харчування:</h3>
+								<div class="stage__item">
+									<div class="stage__checkbox checkbox">
+										<div class="checkbox__item">
+											<input id="food1_breakfast" class="checkbox__input" type="checkbox" value="70">
+											<label for="food1_breakfast" class="checkbox__label"><span class="checkbox__text">Сніданок (70 грн)</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="food1_lunch" class="checkbox__input" type="checkbox" value="100">
+											<label for="food1_lunch" class="checkbox__label"><span class="checkbox__text">Обід (100 грн)</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="food1_dinner" class="checkbox__input" type="checkbox" value="50">
+											<label for="food1_dinner" class="checkbox__label"><span class="checkbox__text">Вечеря (50 грн)</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stage__content">
+								<h3 class="stage__title">Гід:</h3>
+								<div class="stage__item">
+									<div class="stage__options options">
+										<div class="options__item">
+											<input id="o_1" class="options__input" checked type="radio" value="100" name="guide1">
+											<label for="o_1" class="options__label"><span class="options__text">Гід 1 (100 грн)</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_2" class="options__input" type="radio" value="220" name="guide1">
+											<label for="o_2" class="options__label"><span class="options__text">Гід 2 (220 грн)</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_3" class="options__input" type="radio" value="300" name="guide1">
+											<label for="o_3" class="options__label"><span class="options__text">Гід 3 (300 грн)</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="stage__body">
+							<h2 class="stage__title">Етап 2</h2>
+							<div class="stage__content">
+								<div class="stage__item">
+									<label for="transport2">Транспорт:</label>
+									<select id="transport2">
+										<option value="auto">Авто (500 грн)</option>
+										<option value="bus" selected>Автобус (300 грн)</option>
+										<option value="plane">Літак (1000 грн)</option>
+									</select>
+								</div>
+							</div>
+							<div class="stage__content">
+								<h3 class="stage__title">Харчування:</h3>
+								<div class="stage__item">
+									<div class="stage__checkbox checkbox">
+										<div class="checkbox__item">
+											<input id="food2_breakfast" class="checkbox__input" type="checkbox" value="50">
+											<label for="food2_breakfast" class="checkbox__label"><span class="checkbox__text">Сніданок (50 грн)</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="food2_lunch" class="checkbox__input" type="checkbox" value="100">
+											<label for="food2_lunch" class="checkbox__label"><span class="checkbox__text">Обід (100 грн)</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="food2_dinner" class="checkbox__input" type="checkbox" value="150">
+											<label for="food2_dinner" class="checkbox__label"><span class="checkbox__text">Вечеря (150 грн)</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stage__content">
+								<h3 class="stage__title">Гід:</h3>
+								<div class="stage__item">
+									<div class="stage__options options">
+										<div class="options__item">
+											<input id="o_4" class="options__input" type="radio" value="100" name="guide2">
+											<label for="o_4" class="options__label"><span class="options__text">Гід 1 (100 грн)</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_5" class="options__input" type="radio" value="220" name="guide2">
+											<label for="o_5" class="options__label"><span class="options__text">Гід 2 (220 грн)</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_6" class="options__input" checked type="radio" value="300" name="guide2">
+											<label for="o_6" class="options__label"><span class="options__text">Гід 3 (300 грн)</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="stage__body">
+							<h2 class="stage__title">Етап 3</h2>
+							<div class="stage__content">
+								<div class="stage__item">
+									<label for="transport3">Транспорт:</label>
+									<select id="transport3">
+										<option value="auto">Авто (500 грн)</option>
+										<option value="bus">Автобус (300 грн)</option>
+										<option value="plane" selected>Літак (1000 грн)</option>
+									</select>
+								</div>
+							</div>
+							<div class="stage__content">
+								<h3 class="stage__title">Харчування:</h3>
+								<div class="stage__item">
+									<div class="stage__checkbox checkbox">
+										<div class="checkbox__item">
+											<input id="food3_breakfast" class="checkbox__input" type="checkbox" value="50">
+											<label for="food3_breakfast" class="checkbox__label"><span class="checkbox__text">Сніданок (50 грн)</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="food3_lunch" class="checkbox__input" type="checkbox" value="100">
+											<label for="food3_lunch" class="checkbox__label"><span class="checkbox__text">Обід (100 грн)</span></label>
+										</div>
+										<div class="checkbox__item">
+											<input id="food3_dinner" class="checkbox__input" type="checkbox" value="150">
+											<label for="food3_dinner" class="checkbox__label"><span class="checkbox__text">Вечеря (150 грн)</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="stage__content">
+								<h3 class="stage__title">Гід:</h3>
+								<div class="stage__item">
+									<div class="stage__options options">
+										<div class="options__item">
+											<input id="o_7" class="options__input" type="radio" value="100" name="guide3">
+											<label for="o_7" class="options__label"><span class="options__text">Гід 1 (100 грн)</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_8" class="options__input" checked type="radio" value="250" name="guide3">
+											<label for="o_8" class="options__label"><span class="options__text">Гід 2 (250 грн)</span></label>
+										</div>
+										<div class="options__item">
+											<input id="o_9" class="options__input" type="radio" value="300" name="guide3">
+											<label for="o_9" class="options__label"><span class="options__text">Гід 3 (300 грн)</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button onclick="calculateTotal()" class="stage__button">Підрахувати загальну вартість</button>
+						<h2 id="totalCost" class="stage__title">Загальна вартість: 0 грн</h2>
+					</div>		 
+			 		<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>

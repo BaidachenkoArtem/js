@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Задача 6</title>
+	<script src="js/task_6.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 6</h1>
+					<div class="work__text">Умова. Користувач задає кількість оцінок і натискає на кнопку «get table». В результаті формується таблиця з input, куди користувач вводить оцінки. Після цього натискає на кнопку “get sum” і знаходить середнє значення.</div>
+					<div class="work__image">
+						<img src="img/03.jpg" alt="Image">
+					</div>
+					<div class="work__field field">
+						<div class="field__item">
+							<label for="gradesNum" class="field__label">Введіть кількість оцінок</label>
+							<input class="field__input" type="number" id="gradesNum" value="0">
+						</div>
+						<button class="field__button quantity" id="getTable">get table</button>
+
+						<div id="table" class="work__table"></div>
+
+						<button class="field__button" id="getSum" style="display: none;">get sum</button>
+					</div>											
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+</html>
