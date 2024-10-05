@@ -1,0 +1,60 @@
+/* Стилі для карток */
+
+.work__items {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	gap: 1.875rem;
+}
+.work__items:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.work__card {
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid transparent;
+	transition: border 0.3s;
+	cursor: pointer;
+	padding: 0.9375rem;
+}
+.card__image {
+}
+.card__image:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.card__image img {
+	width: 100%;
+	height: 268px;
+}
+
+.card__content {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+.card__title {
+	text-align: center;
+}
+.card__title:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.card__link-title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #111;
+	line-height: 130%;
+	transition: color 0.3s;
+}
+.card__link-title:hover {
+	color: green;
+}
+.card__price {
+	color: red;
+	font-size: 1.25rem;
+	text-align: center;
+	font-weight: bold;
+}
+.selected {
+	border: 2px solid green;
+}

@@ -1,0 +1,13 @@
+/* Стилі для input */
+
+.work__inputs {	
+}
+.work__inputs:not(:last-child) {	
+	margin-bottom: 1.875rem;
+}
+input {
+	padding: 5px 10px;
+	border: 1px solid grey;
+	caret-color: inherit;
+	border-radius: 0.25rem;
+}

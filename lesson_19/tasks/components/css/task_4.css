@@ -1,0 +1,22 @@
+/* Стилі для таблиць */
+
+table {
+	border-collapse: collapse;
+	width: 200px;
+	margin-bottom: 20px;
+}
+
+td {
+	border: 1px solid black;
+	padding: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.table-container {
+	margin-bottom: 30px;
+}
+
+.red-border {
+	border: 3px solid red;
+}
