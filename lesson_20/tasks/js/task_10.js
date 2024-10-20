@@ -4,115 +4,6 @@
 	Дано перелік товарів у кошику. При зміні кількості одиниць товару збільшувати загальну вартість. Створити клас 	Product, що призначений для маніпуляцій товаром та клас ProductManager, що оперує з усіма товарами (через подію передвати ідентифікатор товару та операцію, що зроблена).
 */
 
-//=============== Не мій варіант1 ===============
-// const productList = [
-// 	new Product(
-// 		"ASUS TUF Gaming A15 FA507NU Gamer Laptop",
-// 		20000,
-// 		10,
-// 		"./img/asus.png"
-// 	),
-// 	new Product("Apple MacBook Air 13", 39999, 5, "./img/macbook.png"),
-// 	new Product(
-// 		"Samsung KU6000 LED-Backlit LCD",
-// 		24999,
-// 		7,
-// 		"./img/samsung.png"
-// 	),
-// ]
- 
-// window.onload = () => {
-// 	const shop = new Shop(
-// 		productList,
-// 		".productList .cardList",
-// 		".cartList .cardShop",
-// 		".totalSum"
-// 	)
-// 	shop.render()
-// 	// cart.addToCart(productList[0])
-// }
-
-//=============== Не мій варіант2 ===============
-
-//=============== Не мій варіант3 ===============
-
-//=============== Не мій варіант4 ===============
-
-//=============== Мій варіант1 ==================
-// // Клас для окремого товару
-// class Product {
-// 	constructor(id, name, price, quantity) {
-// 		 this.id = id;
-// 		 this.name = name;
-// 		 this.price = price;
-// 		 this.quantity = quantity;
-// 	}
-
-// 	updateQuantity(newQuantity) {
-// 		 this.quantity = newQuantity;
-// 	}
-
-// 	getTotalPrice() {
-// 		 return this.price * this.quantity;
-// 	}
-// }
-
-// // Клас для управління товарами
-// class ProductManager {
-// 	constructor() {
-// 		 this.products = {};
-// 		 this.init();
-// 	}
-
-// 	// Ініціалізація подій для кожного товару
-// 	init() {
-// 		 document.querySelectorAll('.product').forEach((productElement) => {
-// 			  const id = productElement.getAttribute('data-id');
-// 			  const name = productElement.querySelector('.product-name').innerText;
-// 			  const price = parseFloat(productElement.querySelector('.price').innerText);
-// 			  const quantity = parseInt(productElement.querySelector('.quantity').value);
-
-// 			  const product = new Product(id, name, price, quantity);
-// 			  this.products[id] = product;
-
-// 			  // Додаємо обробку зміни кількості
-// 			  productElement.querySelector('.quantity').addEventListener('input', (e) => {
-// 					this.updateProductQuantity(id, e.target.value);
-// 			  });
-// 		 });
-
-// 		 this.updateTotal();
-// 	}
-
-// 	// Оновлення кількості товару та загальної суми
-// 	updateProductQuantity(id, newQuantity) {
-// 		 const product = this.products[id];
-// 		 product.updateQuantity(parseInt(newQuantity));
-
-// 		 // Оновлюємо загальну вартість для цього товару
-// 		 const productElement = document.querySelector(`.product[data-id="${id}"]`);
-// 		 const totalPriceElement = productElement.querySelector('.total-price');
-// 		 totalPriceElement.innerText = product.getTotalPrice();
-
-// 		 this.updateTotal();
-// 	}
-
-// 	// Оновлення загальної суми кошика
-// 	updateTotal() {
-// 		 let total = 0;
-// 		 for (let id in this.products) {
-// 			  total += this.products[id].getTotalPrice();
-// 		 }
-// 		 document.getElementById('total').innerText = total;
-// 	}
-// }
-
-// // Створюємо менеджера товарів
-// document.addEventListener('DOMContentLoaded', () => {
-// 	const manager = new ProductManager();
-// });
-
-//=============== Мій варіант2 ==================
 class Product {
 	constructor(name, price, quantity, image) {
 		this.name = name;
@@ -180,7 +71,7 @@ class Cart {
 			cartList.appendChild(cartItem);
 		});
 		this.attachRemoveEvent();
-		this.attachQuantityEvents();  // Attach quantity change events
+		this.attachQuantityEvents();
 	}
 
 	attachQuantityEvents() {
@@ -233,7 +124,6 @@ class Cart {
 	}
 }
 
-
 class Shop {
 	constructor(productList, productListSelector, cartListSelector, totalSumSelector) {
 		this.productList = productList;
@@ -277,9 +167,9 @@ const productList = [
 window.onload = () => {
 	const shop = new Shop(
 		productList,
-		".shop__card", // Изменено
-		".shop__cart", // Изменено
-		".cart-shop__sum" // Изменено
+		".shop__card", 
+		".shop__cart",
+		".cart-shop__sum"
 	);
 	shop.render();
 };

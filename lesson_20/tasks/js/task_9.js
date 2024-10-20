@@ -4,15 +4,6 @@
 	Перекладач. Користувачу виводять змішані картки з словами на англійській і українській мові. Користувач поступово клікає на картки (виділяємо синьою рамкою). Якщо знайдено правильні пари карток, що відповідають одному слову, то видаляємо ці картки. Інакше - виділяємо червоною рамкою і через секунду забираємо рамку.
 */
 
-//=============== Не мій варіант1 ===============
-
-//=============== Не мій варіант2 ===============
-
-//=============== Не мій варіант3 ===============
-
-//=============== Не мій варіант4 ===============
-
-//=============== Мій варіант1 ==================
 const words = [
 	{ id: 0, en: 'table', ua: 'стіл' },
 	{ id: 1, en: 'car', ua: 'автомобіль' },
@@ -29,8 +20,8 @@ let matchedPairs = 0;
 
 function shuffleArray(array) {
 	for (let i = array.length - 1; i > 0; i--) {
-		 const j = Math.floor(Math.random() * (i + 1));
-		 [array[i], array[j]] = [array[j], array[i]];
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
 	}
 }
 
@@ -47,12 +38,12 @@ function createCard(text, id, language) {
 
 function handleCardClick(card) {
 	if (selectedCards.length < 2 && !card.classList.contains('selected')) {
-		 card.classList.add('selected');
-		 selectedCards.push(card);
+		card.classList.add('selected');
+		selectedCards.push(card);
 
-		 if (selectedCards.length === 2) {
-			  checkMatch();
-		 }
+		if (selectedCards.length === 2) {
+			checkMatch();
+		}
 	}
 }
 
@@ -60,25 +51,23 @@ function checkMatch() {
 	const [card1, card2] = selectedCards;
 
 	if (card1.dataset.id === card2.dataset.id && card1.dataset.language !== card2.dataset.language) {
-		 // Знайдено правильну пару
-		 setTimeout(() => {
-			  card1.classList.add('hidden');
-			  card2.classList.add('hidden');
-			  matchedPairs++;
+		setTimeout(() => {
+			card1.classList.add('hidden');
+			card2.classList.add('hidden');
+			matchedPairs++;
 
-			  if (matchedPairs === words.length) {
-					alert('Ви знайшли всі пари!');
-			  }
-		 }, 500);
+			if (matchedPairs === words.length) {
+				alert('Ви знайшли всі пари!');
+			}
+		}, 500);
 	} else {
-		 // Неправильна пара
-		 card1.classList.add('wrong');
-		 card2.classList.add('wrong');
+		card1.classList.add('wrong');
+		card2.classList.add('wrong');
 
-		 setTimeout(() => {
-			  card1.classList.remove('selected', 'wrong');
-			  card2.classList.remove('selected', 'wrong');
-		 }, 1000);
+		setTimeout(() => {
+			card1.classList.remove('selected', 'wrong');
+			card2.classList.remove('selected', 'wrong');
+		}, 1000);
 	}
 
 	selectedCards = [];
@@ -92,16 +81,14 @@ function initGame() {
 	shuffleArray(ukrainianWords);
 
 	englishWords.forEach(word => {
-		 const card = createCard(word.text, word.id, word.language);
-		 englishContainer.appendChild(card);
+		const card = createCard(word.text, word.id, word.language);
+		englishContainer.appendChild(card);
 	});
 
 	ukrainianWords.forEach(word => {
-		 const card = createCard(word.text, word.id, word.language);
-		 ukrainianContainer.appendChild(card);
+		const card = createCard(word.text, word.id, word.language);
+		ukrainianContainer.appendChild(card);
 	});
 }
 
-// Ініціалізуємо гру
 initGame();
-//=============== Мій варіант2 ==================

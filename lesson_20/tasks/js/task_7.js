@@ -4,26 +4,16 @@
 	Динамічний пошук. Є список працівників і поле пошуку. При введенні відображаються усі, які містять вказаний фрагмент
 */
 
-//=============== Не мій варіант1 ===============
-
-//=============== Не мій варіант2 ===============
-
-//=============== Не мій варіант3 ===============
-
-//=============== Не мій варіант4 ===============
-
-//=============== Мій варіант1 ==================
 document.getElementById('search-input').addEventListener('input', function() {
-	let filter = this.value.toLowerCase(); // Получаем введённый текст и приводим его к нижнему регистру.
-	let listItems = document.querySelectorAll('#employee-list li'); // Получаем все элементы списка <li>.
+	let filter = this.value.toLowerCase();
+	let listItems = document.querySelectorAll('#employee-list li');
 
 	listItems.forEach(function(item) {
-		let text = item.textContent.toLowerCase(); // Получаем текст элемента списка и приводим его к нижнему регистру.
+		let text = item.textContent.toLowerCase();
 		if (text.includes(filter)) {
-			item.style.display = ''; // Если текст содержит фильтр, отображаем элемент.
+			item.style.display = '';
 		} else {
-			item.style.display = 'none'; // Если не содержит, скрываем элемент.
+			item.style.display = 'none';
 		}
 	});
 });
-//=============== Мій варіант2 ==================
