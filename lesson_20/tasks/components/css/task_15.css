@@ -1,0 +1,145 @@
+/* Стилі для карточки в корзині */
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+*::before,
+*::after {
+	display: inline-block;
+}
+
+/* =============================== */
+
+.shop__cart {
+	padding: 1.25rem;
+}
+.shop__cart:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.cart-shop {
+}
+.cart-shop__content {
+	flex: 1 1 auto;
+	display: grid;
+	grid-template-columns: 18.75rem auto;
+	align-items: center;
+	gap: 0.9375rem;
+}
+.list-shop {
+	display: flex;
+	gap: 1.875rem;
+	align-items: center;
+}
+.list-shop__item {
+	background-color: #fff;
+	padding: 1.25rem;
+	border-radius: 0.25rem;
+	display: flex;
+	align-items: center;
+	gap: 0.9375rem;
+}
+.list-shop__item:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.list-shop__image {
+}
+.list-shop__image img {
+	width: 6.25rem;
+}
+.list-shop__content {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	gap: 0.9375rem;
+}
+.list-shop__title {	
+}
+.list-shop__link-title {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.125rem;	
+	line-height: 120%;
+	font-weight: 600;
+	transition: color 0.3s;	
+}
+.list-shop__link-title:hover {
+	color: green;
+}
+.list-shop__quantity {
+	font-size: 1rem;
+}
+.list-shop__price {
+	color: red;
+	font-weight: 600;
+}
+
+.cart-shop__text {
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 120%;
+}
+.cart-shop__sum {
+	color: red;
+	font-weight: 600;
+}
+
+/* ===================== */
+
+.quantity {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	gap: 0.9375rem;
+}
+.quantity__button {
+	flex: 0 0 30px;
+	position: relative;
+	cursor: pointer;
+	background-color: green;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s;
+}
+.quantity__button:hover {
+	background-color: orange;
+}
+.quantity__button::before,
+.quantity__button::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: all 0.3s ease 0s;
+	margin: 0px 0px 0px -4.5px;
+	background-color: #fff;
+	width: 9px;
+	height: 1px;
+}
+
+.quantity__button:hover::before,
+.quantity__button:hover::after {
+	background-color: #fff;
+}
+
+.quantity__button--plus::before {
+	transform: rotate(-90deg);
+}
+.quantity__button--minus {	
+}
+.quantity__input {
+	flex: 1 1 auto;
+}
+.quantity__input input {
+	height: 100%;
+	font-size: 1.125rem;	
+	line-height: 120%;
+	font-weight: 600;
+	width: 1.5rem;
+	text-align: center;
+}

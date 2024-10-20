@@ -1,0 +1,98 @@
+/* Стилі для бронювання таксі та велосипедів */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.work__body {
+	display: flex;
+	flex-direction: column;
+}
+.work__body:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.work__items {
+	display: flex;
+	flex-direction: column;
+}
+.work__items:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.items-work {
+}
+.items-work__line {
+	display: grid;
+}
+.items-work__line:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.items-work__title,
+.content-work__title {
+	font-size: 1.5rem;
+	color: darkblue;
+}
+.items-work__title,
+.content-work__title:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.items-work__list {
+	display: grid;
+	gap: 0.9375rem;
+}
+.items-work__item {
+	display: flex;
+	align-items: center;
+	gap: 0.9375rem;
+	font-size: 1.125rem;
+}
+.book-car {
+}
+.book-bike {
+}
+.work__content {
+	display: flex;
+	flex-direction: column;
+}
+.content-work {
+}
+.content-work__item {
+}
+.content-work__item:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.content-work__list {
+}
+li.selected {
+	font-size: 1.125rem;
+}
+li.selected:not(:last-child) {
+	margin-bottom: 0.625rem;
+}
+#booked-cars, #booked-bikes {
+	border: 1px solid gray;
+	padding: 0.625rem;
+	background-color: #fff;
+}
+
+button {
+	display: inline-flex;
+	justify-content: center;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.125rem;	
+	background-color: green;
+	color: #fff;
+	border: none;
+	padding: 0.625rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s;
+} 
+button:hover {
+	background-color: orange;
+}

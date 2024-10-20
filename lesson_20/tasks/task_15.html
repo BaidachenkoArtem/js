@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="components/css/task_15.css">
+	<title>Задача 15</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 15</h1>
+					<div class="work__text">Умова. Розробити елемент для вводу кількості вибраного товару за зразком (мінімальна кількість 1, максимальна кількість 10, при перевищенні блокувати кнопку)</div>
+					<div class="work__image">
+						<img src="img/09.jpg" alt="Image">
+					</div>
+					<div class="shop__cart cart-shop">
+						<div class="cart-shop__content">							
+							<div class="cart-shop__list list-shop">
+								<div class="list-shop__image">
+									<img src="img/acer.jpg" alt="Acer">
+								</div>
+								<div class="list-shop__content">
+									<h4 class="list-shop__title">
+										<a class="list-shop__link-title">Acer</a>
+									</h4>
+									<div class="list-shop__quantity quantity">
+										<button data-quantity-minus type="button" class="quantity__button quantity__button--minus">-</button>
+										<div class="quantity__input">
+											<input data-quantity-value autocomplete="off" type="text" value="2" min="1" max="10" readonly>
+										</div>
+										<button data-quantity-plus type="button" class="quantity__button quantity__button--plus">+</button>
+									</div>
+								</div>
+							</div>							
+							<div class="cart-shop__text">До оплати: <span class="cart-shop__sum">32500</span> грн</div>
+						</div>
+					</div>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_15.js"></script>
+</body>
+</html>

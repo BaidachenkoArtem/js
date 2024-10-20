@@ -1,0 +1,32 @@
+/* Стилі для таблиці сапер */
+
+body {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+
+.work__mine:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	width: 50px;
+	height: 50px;
+	background-color: gray;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+td.opened-safe {
+	background-color: green;
+}
+
+td.opened-mine {
+	background-color: red;
+}

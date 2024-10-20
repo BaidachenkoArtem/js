@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="components/css/task_5.css">
+	<title>Задача 5</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 5</h1>
+					<div class="work__text">Умова. Бронювання таксі та велосипедів (по аналогії з тим, що ми робили на практиці). Відображаються списки авто та велосипедів, які можна забронювати. При бронюванні вибрані авто та вибрані велосипеди відображаються у окремих списках.</div>
+					<div class="work__body">
+						<div class="work__items items-work">
+							<div class="items-work__line">
+								<h2 class="items-work__title">Доступні авто для бронювання:</h2>
+								<ul class="items-work__list" id="cars-list">
+									<li class="items-work__item">Авто 1 <button class="book-car">Забронювати</button></li>
+									<li class="items-work__item">Авто 2 <button class="book-car">Забронювати</button></li>
+									<li class="items-work__item">Авто 3 <button class="book-car">Забронювати</button></li>
+								</ul>
+							</div>
+							<div class="items-work__line">
+								<h2 class="items-work__title">Доступні велосипеди для бронювання:</h2>
+								<ul class="items-work__list" id="bikes-list">
+									<li class="items-work__item">Велосипед 1 <button class="book-bike">Забронювати</button></li>
+									<li class="items-work__item">Велосипед 2 <button class="book-bike">Забронювати</button></li>
+									<li class="items-work__item">Велосипед 3 <button class="book-bike">Забронювати</button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="work__content content-work">
+							<div class="content-work__item">
+								<h2 class="content-work__title">Заброньовані авто:</h2>
+								<ul class="content-work__list" id="booked-cars"></ul>
+							</div>
+							<div class="content-work__item">
+								<h2 class="content-work__title">Заброньовані велосипеди:</h2>
+    							<ul class="content-work__list" id="booked-bikes"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_5.js"></script>
+</body>
+</html>

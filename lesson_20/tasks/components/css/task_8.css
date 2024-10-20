@@ -1,0 +1,75 @@
+/* Стилі для списка автомобілів */
+
+.work__filter {
+}
+.work__filter:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.filter {
+}
+.filter__body {
+}
+.filter__container {
+	border: 2px solid green;
+	padding: 1.25rem;
+	display: inline-block;
+}
+.filter__container:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.filter__item {
+	display: grid;
+	gap: 0.9375rem;
+}
+.filter__item:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.filter__label {
+	font-size: 1rem;
+	line-height: 120%;
+	font-weight: 600;
+}
+.filter__list {
+	border: 2px solid red;
+	padding: 1.25rem;
+}
+.filter__title {	
+	color: red;
+	font-size: 1.5rem;
+	line-height: 120%;
+	font-weight: 600;
+}
+li {
+	color: green;
+	font-size: 1.125rem;
+	line-height: 120%;
+}
+li:not(:last-child) {
+	margin-bottom: 0.625rem;
+}
+.filter__title:not(:last-child) {
+	margin-bottom: 0.9375rem;	
+}
+
+select {	
+	position: relative;
+	color: inherit;
+	border: 1px solid green;
+	background-color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+	padding: 4px;
+}
+option {	
+	color: #000;
+	position: absolute;
+	top: calc(100% - toRem(1));
+	border-radius: 0 0 4px 4px;
+	min-width: 100%;
+	left: 0;
+	background-color: #fff;
+	border-top: 0;
+	border: 1px solid green;
+	border-top: 0;
+	padding: 10px 0px 5px 0px;
+}

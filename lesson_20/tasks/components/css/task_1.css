@@ -1,0 +1,19 @@
+/* Стилі сіяючі зорі */
+
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+.stars-container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.star {
+	background: url("../../img/star-fill.svg") 0 0 / 100% no-repeat;
+	position: absolute;
+}

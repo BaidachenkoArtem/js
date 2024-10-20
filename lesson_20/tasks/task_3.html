@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="components/css/task_3.css">
+	<title>Задача 3</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 3</h1>
+					<div class="work__text">Умова. На формі вводять 7 числових значень (вік, зріст, вага, заробітна плата, стаж, номер відділу, порядковий номер). Додати подію обробки події click на форму і якщо клік на внутрішньому input, то автоматично замінювати значення його на 0. Використати делегування</div>
+					<form class="work__form form-work" id="dataForm">
+						<div class="form-work__item">
+							<label class="form-work__label" for="age">Вік:</label>
+							<input class="form-work__input" type="number" id="age" name="age" placeholder="Введіть вік">
+						</div>
+						<div class="form-work__item">
+							<label class="form-work__label" for="height">Зріст (см):</label>
+							<input class="form-work__input" type="number" id="height" name="height" placeholder="Введіть зріст">
+						</div>
+						<div class="form-work__item">
+							<label class="form-work__label" for="weight">Вага (кг):</label>
+							<input class="form-work__input" type="number" id="weight" name="weight" placeholder="Введіть вагу">
+						</div>
+						<div class="form-work__item">
+							<label class="form-work__label" for="salary">Заробітна плата:</label>
+							<input class="form-work__input" class="form-work__input" type="number" id="salary" name="salary" placeholder="Введіть заробітну плату">
+						</div>
+						<div class="form-work__item">
+							<label class="form-work__label" for="experience">Стаж (років):</label>
+							<input class="form-work__input" type="number" id="experience" name="experience" placeholder="Введіть стаж">
+						</div>
+						<div class="form-work__item">
+							<label class="form-work__label" for="department">Номер відділу:</label>
+							<input class="form-work__input" type="number" id="department" name="department" placeholder="Введіть номер відділу">
+						</div>
+						<div class="form-work__item">
+							<label class="form-work__label" for="ordinalNumber">Порядковий номер:</label>
+							<input class="form-work__input" type="number" id="ordinalNumber" name="ordinalNumber" placeholder="Введіть порядковий номер">
+						</div>
+					</form>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_3.js"></script>
+</body>
+</html>

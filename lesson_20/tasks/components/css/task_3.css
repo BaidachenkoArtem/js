@@ -1,0 +1,33 @@
+/* Стилі для форми */
+
+.work__form {
+	display: flex;
+	flex-direction: column;
+	width: 18.75rem;
+}
+.work__form:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.form-work {
+}
+.form-work__item {
+	display: grid;
+}
+.form-work__item:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.form-work__label {
+	font-weight: 500;
+	font-size: 1.125rem;	
+}
+.form-work__label:not(:last-child) {
+	margin-bottom: 0.625rem;	
+}
+input {
+	display: block;
+	border: 1px solid gray;
+	padding: 0.625rem;
+	font-size: 1rem;
+	line-height: 120%;
+	border-radius: 0.25rem;
+}

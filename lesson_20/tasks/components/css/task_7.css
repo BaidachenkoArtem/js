@@ -1,0 +1,59 @@
+/* Стилі для динамічного пошуку */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.work__search {
+}
+.work__search:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.search {
+	border: 0.125rem solid green;
+	padding: 1.25rem;
+	width: 18.75rem;
+}
+.search__item {
+	display: grid;
+	gap:  0.9375rem;
+}
+.search__item:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.search__label {
+	font-size: 1.125rem;
+}
+.search__input {
+	width: 100%;
+	display: block;
+	border: 1px solid gray;
+	padding: 0.625rem;
+	font-size: 1rem;
+	line-height: 120%;
+	border-radius: 0.25rem;
+}
+.search__content {
+	display: grid;
+	gap: 0.9375rem;
+}
+.search__title {
+	font-size: 1.25rem;
+	line-height: 120%;
+	color: red;
+}
+ul.search__list {
+	list-style-type: none;
+}
+.list-search {
+}
+.list-search__item {
+	color: red;
+	font-size: 1.125rem;
+	line-height: 120%;
+}
+.list-search__item:not(:last-child) {
+	margin-bottom: 1.25rem;
+}

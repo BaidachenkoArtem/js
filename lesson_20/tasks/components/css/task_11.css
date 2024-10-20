@@ -1,0 +1,38 @@
+/* Стилі для таблиць */
+.work__chart:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.items-work__title {
+	font-size: 1.125rem;
+	font-weight: 600;
+	line-height: 120%;
+}
+.items-work__title:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.items-work__list {
+	border: 2px solid green;
+	padding: 1.25rem;
+	display: inline-grid;
+}
+.title-2 {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 120%;
+}
+.item-2 {
+	width: 500px;
+	display: inline-block;
+	border: 2px solid yellow;
+	div {
+		height: 20px;
+	}
+}
+.items-work__line {
+	display: grid;
+	grid-template-columns: 120px 1fr;
+	gap: 0.9375rem;
+}
+.items-work__line:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}

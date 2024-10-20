@@ -1,0 +1,40 @@
+/* Стилі для списку, у якому можна вибирати елементи (вибраний елемент підсвічується рамкою) */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.work__body {
+}
+.work__body:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.body-work {
+}
+.body-work__title {
+	font-size: 1.5rem;
+}
+.body-work__title:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+ul.body-work__list {
+	list-style-type: none;
+}
+.body-work__item {
+	padding: 0.625rem;
+	border: 0.125rem solid transparent;
+	cursor: pointer;
+	transition: border 0.3s ease;
+}
+.body-work__item:not(:last-child) {
+	margin-bottom: 0.625rem;
+}
+.body-work__item:hover {
+	border: 0.125rem solid lightgray;
+}
+
+.selected {
+	border: 0.125rem solid blue;
+	background-color: #fff;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="components/css/task_8.css">
+	<title>Задача 8</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 8</h1>
+					<div class="work__text">Умова. Дано список автомобілів (марка, рік випуску, ціна). Сформувати елементи для фільтрування з використанням випадаючого списку (контент цих випадаючих списків сформувати у залежності від переданого списку).</div>
+					<div class="work__image">
+						<img src="img/02.jpg" alt="Image">
+					</div>
+					<div class="work__filter filter">
+						<div class="filter__body">
+							<div class="filter__container">
+								<div class="filter__item">
+									<label class="filter__label" for="brand">Марка</label>
+									<select id="brand">
+										<option value="">Виберіть марку</option>
+									</select>
+								</div>
+								<div class="filter__item">
+									<label class="filter__label" for="year">Рік випуску</label>
+									<select id="year">
+										<option value="">Виберіть рік</option>
+									</select>
+								</div>
+							</div>
+							<div class="filter__list">
+								<h3 class="filter__title">Список</h3>
+								<ul id="car-list"></ul>
+							</div>
+						</div>
+					</div>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_8.js"></script>
+</body>
+</html>

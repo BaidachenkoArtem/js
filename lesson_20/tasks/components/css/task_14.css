@@ -1,0 +1,75 @@
+/* Стилі для форми (введення логіна і пароля) */
+
+.work__login {
+}
+.work__login:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.login {
+	display: flex;
+}
+.login__container {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid lightblue;
+	padding: 20px;
+	max-width: 300px;
+	margin: 0;
+}
+.login__form {
+}
+.form-login {
+}
+.form-login__body {
+}
+.form-login__body:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.form-login__item {
+	display: grid;
+}
+.form-login__item:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.form-login__label {
+	font-weight: 500;
+	font-size: 1.125rem;	
+}
+.form-login__label:not(:last-child) {
+	margin-bottom: 0.625rem;
+}
+
+input {
+	width: 100%;
+	display: block;
+	border: 1px solid gray;
+	padding: 0.625rem;
+	font-size: 1rem;
+	line-height: 120%;
+	border-radius: 0.25rem;
+}
+.form-login__actions {
+}
+.form-login__button {
+	background-color: lightgray;
+	border: none;
+	cursor: not-allowed;
+	display: inline-flex;
+	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.125rem;	
+	color: #fff;
+	border: none;
+	padding: 0.625rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s;
+	cursor: not-allowed;
+}
+.form-login__button:enabled {
+	background-color: blue;
+	color: white;
+	cursor: pointer;
+}
+.form-login__button:enabled:hover {
+	background-color: orange;
+}
