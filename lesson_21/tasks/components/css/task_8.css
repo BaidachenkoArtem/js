@@ -1,0 +1,63 @@
+/* Стилі для функції, яка дозволяє визначити, чи знаходиться вказана дата і час у межах поточного тижня (від понеділка 0 год, 0хв, до неділі 23год.59хв) */
+
+.work__date:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.date__container {
+	font-size: 1.25rem;
+	color: #333;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+.date__title {
+	font-size: 1.25rem;
+	line-height: 120%;
+	color: #333;
+}
+.date__title:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.date__items {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.25rem;
+}
+.date__items:not(:last-child) {
+	margin-bottom: 1.25rem;
+}
+.date__label {
+	font-weight: 600;
+	font-size: 1.125rem;
+}
+.date__input {
+	cursor: pointer;
+	border: 1px solid gray;
+	padding: 0.625rem;
+	font-size: 1rem;
+	line-height: 120%;
+	border-radius: 0.25rem;
+}
+.date__button {
+	display: inline-flex;
+	justify-content: center;
+	cursor: pointer;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.125rem;	
+	background-color: green;
+	color: #fff;
+	border: none;
+	padding: 0.625rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s;
+}
+.date__button:hover {
+	background-color: orange;
+}
+.date__result {
+	font-weight: bold;
+	font-size: 1.25rem;
+}

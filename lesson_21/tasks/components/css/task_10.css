@@ -1,0 +1,38 @@
+/* Стилі для годин у Лондоні, Парижі, Сіднеї */
+
+.work__time:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.time__container {
+	display: flex;
+	align-items: center;
+	gap: 1.875rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+.time__box {
+	background-color: #ffffff;
+	padding: 1.25rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.time__box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.time__title {
+	font-size: 1.25rem;
+	line-height: 120%;
+	color: #333;
+}
+.time__title:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+.time__item {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #007bff;
+}
+ 

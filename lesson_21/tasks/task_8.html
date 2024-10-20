@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="components/css/task_8.css">
+	<title>Задача 8</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 8</h1>
+					<div class="work__text">Умова. Створити функцію, яка дозволяє визначити, чи знаходиться вказана дата і час у межах поточного тижня (від понеділка 0 год, 0хв, до неділі 23год.59хв)</div>
+					<div class="work__date date">
+						<div class="date__container">
+							<h2 class="date__title">Перевірка дати в межах поточного тижня</h2>
+							<div class="date__items">
+								<label class="date__label" for="inputDate">Введіть дату і час:</label>
+								<input class="date__input" type="datetime-local" id="inputDate">
+								<button class="date__button" id="checkDate">Перевірити</button>
+							</div>
+							<div class="date__result" id="result"></div>
+						</div>
+					</div>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_8.js"></script>
+</body>
+</html>

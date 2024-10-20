@@ -1,0 +1,27 @@
+/* Стилі для блоку - Визначити скільки залишилось до кінця робочого дня (до 17.00) */
+
+.work__date:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.date__container {
+	font-size: 1.25rem;
+	color: #333;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+.date__title {
+	font-size: 1.25rem;
+	line-height: 120%;
+	color: #333;
+}
+.date__title:not(:last-child) {
+	margin-bottom: 0.9375rem;
+}
+#timeRemaining {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #333;
+}

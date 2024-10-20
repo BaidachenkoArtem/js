@@ -1,0 +1,16 @@
+/* Стилі для 10-ти div */
+
+.work__items div {
+	padding: 10px;
+	border: 1px solid black;
+	cursor: pointer;	
+}
+.work__items div:not(:last-child) {
+	margin-bottom: 5px;
+}
+.work__items:not(:last-child) {
+	margin-bottom: 1.875rem;	
+}
+.red {
+	background-color: red;
+}

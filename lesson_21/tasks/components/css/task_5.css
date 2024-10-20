@@ -1,0 +1,13 @@
+/* Стилі для блоку - Виводити на екран скільки хвилин користувач вже на сайті */
+
+.work__timer:not(:last-child) {
+	margin-bottom: 1.875rem;
+}
+.timer__container {
+	font-size: 1.25rem;
+	color: #333;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
