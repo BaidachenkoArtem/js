@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="components/css/task_1.css">
+	<title>Задача 1</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задачa 1-17</h1>
+					<div class="work__text">Задачі 1-13 результат виводиться в консолі</div>
+					<div class="work__body">
+						<div class="work__phone phone">
+							<div class="phone__container">
+								<h2 class="phone__title title">Задача 14. Перевірка українського номера телефону</h2>
+								<div class="phone__items">
+									<input class="phone__input input" type="text" id="phoneInput" placeholder="Введіть номер телефону">
+									<button class="phone__button button" onclick="checkUkrainianPhone()">Перевірити</button>
+								</div>
+								<div class="phone__result result" id="result"></div>
+							</div>
+						</div>
+						<div class="work__block block">
+							<div class="block__container">
+								<h2 class="block__title title">Задача 15. Замінити пробіл на дефіс</h2>
+								<div class="block__items">
+									<input class="block__input input" type="text" id="nameInput" placeholder="Введіть прізвище та ім’я">
+									<button class="block__button button" onclick="replaceSpaceWithHyphen()">Замінити</button>
+								</div>
+								<div class="block__result result" id="result1"></div>
+							</div>
+						</div>
+						<div class="work__block block">
+							<div class="block__container">
+								<h2 class="block__title title">Задача 16. Замінити формат дати</h2>
+								<div class="block__items">
+									<input class="block__input input" type="text" id="dateInput" placeholder="Введіть дату у форматі день.місяць.рік">
+									<button class="block__button button" onclick="replaceDateFormat()">Замінити</button>
+								</div>
+								<div class="block__result result" id="result2"></div>
+							</div>
+						</div>
+						<div class="work__block block">
+							<div class="block__container">
+								<h2 class="block__title title">Задача 17. Перевірка вихідного дня</h2>
+								<div class="block__items">
+									<input class="block__input input" type="text" id="dayInput" placeholder="Введіть день (0-6 або sun,mon,...)">
+									<button class="block__button button" onclick="checkWeekend()">Перевірити</button>
+								</div>
+								<div class="block__result result" id="result3"></div>
+							</div>
+						</div>
+					</div>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_1.js"></script>
+</body>
+</html>

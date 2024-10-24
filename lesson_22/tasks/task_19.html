@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="components/css/task_19.css">
+	<title>Задача 19</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="page__work work">
+				<div class="work__container">
+					<h1 class="work__title">Задача 19</h1>
+					<div class="work__text">Умова. Зберігати у пам’яті список справ, які користувачу треба виконати (зберігати у localStorage). Періодично випадковим чином вибирати якусь з справ і виводити користувачу (з використанням confirm). Якщо користувач натискає на «Ок», то видаляти цю задачу.</div>
+					<div class="work__task task">
+						<div class="task__container">
+							<h2 class="task__title">Список справ</h2>
+							<div class="task__items">
+								<input class="task__input" type="text" id="taskInput" placeholder="Введіть нову задачу">
+								<button class="task__button" id="addTaskBtn">Додати задачу</button>
+							</div>
+							<ul class="task__list" id="taskList"></ul>
+						</div>
+					</div>
+					<div class="work__actions actions-work">
+						<a href="../index.html" class="actions-work__link">На головну</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script src="js/task_19.js"></script>
+</body>
+</html>
